@@ -8,11 +8,14 @@ export default {
   ],
   theme: {
     extend: {
+      clipPath: {
+        pointed: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-clip-path")],
 } satisfies Config;
