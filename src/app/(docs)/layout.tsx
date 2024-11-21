@@ -9,10 +9,7 @@ const DocumentationLayout = ({
   return (
     <div className="flex w-full mx-auto h-[calc(100vh-100px)]">
       <Sidebar />
-      <div className="px-2 relative">
-        {children}
-        <div className="h-[90%] w-0.5 bg-white/20 absolute left-0 -translate-x-1/2 clip-path-pointed" />
-      </div>
+      <div className="px-2 w-[calc(100vw-530px)]">{children}</div>
     </div>
   );
 };

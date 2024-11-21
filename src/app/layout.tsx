@@ -24,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Mosaic UI</title>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navbar />
         {/* Render Sidebar only if not on homepage */}
