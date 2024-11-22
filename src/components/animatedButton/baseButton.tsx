@@ -23,11 +23,11 @@ const radiuss: radius[] = [
   "none",
   "xl",
 ];
-const animations: animation[] = ["breathing", "shiny", "bounce", "glitch"];
+// const animations: animation[] = ["breathing", "shiny", "bounce", "glitch"];
 
 const AnimatedButton = () => {
   return (
-    <div className="h-[400px] rounded-lg w-full">
+    <div className="h-full rounded-lg w-full">
       <div className="flex items-center justify-center h-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  place-items-center gap-4">
           {gradients.map((gradient, i) => (

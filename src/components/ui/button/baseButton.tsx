@@ -5,9 +5,7 @@ import ForestButton from "./forestBtn/forestButton";
 import GlitchButton from "./glitchBtn/glitchButton";
 
 const BaseButton = ({
-  children,
   gradient,
-  radius,
 }: {
   children: React.ReactNode;
   gradient: string;

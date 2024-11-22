@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navbar />
         {/* Render Sidebar only if not on homepage */}
-        <main className="flex-1 p-4">{children}</main>
+        <main className="flex-1 ">{children}</main>
       </body>
     </html>
   );

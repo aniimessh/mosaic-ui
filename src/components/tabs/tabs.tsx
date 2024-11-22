@@ -17,13 +17,13 @@ const Tabs = ({ previewContent, codeContent }: TabsProps) => {
   return (
     <div className="">
       {/* Tab Buttons */}
-      <div className="flex gap-1 mb-7">
+      <div className="flex gap-1 z-30">
         <button
           className={`${
             activeTab === "preview"
-              ? "bg-white/10 text-white border-b-2 border-b-white"
-              : "bg-black text-white "
-          } px-4 p-2 rounded-sm border border-white/10   transition-all duration-200`}
+              ? "bg-white/10 text-white border-b-2 border-b-white/50"
+              : "bg-black text-white border-b-2 border-b-black"
+          } px-4 p-2 rounded-sm border border-white/10    transition-all duration-200`}
           onClick={() => handleTabChange("preview")}
           type="button"
         >
@@ -32,8 +32,8 @@ const Tabs = ({ previewContent, codeContent }: TabsProps) => {
         <button
           className={`${
             activeTab === "code"
-              ? "bg-white/10 text-white border-b-2 border-b-white"
-              : "bg-transparent text-white "
+              ? "bg-white/10 text-white border-b-2 border-b-white/50"
+              : "bg-transparent text-white border-b-2 border-b-black"
           } px-4 p-2 rounded-sm border border-white/10    transition-all duration-200`}
           onClick={() => handleTabChange("code")}
           type="button"
@@ -45,13 +45,13 @@ const Tabs = ({ previewContent, codeContent }: TabsProps) => {
       {/* Tab Content */}
       <div className="tab-content">
         {activeTab === "preview" ? (
-          <div className="h-[400px] rounded-lg  bg-white/10">
+          <div className="h-[500px] rounded-lg  bg-white/10">
             <div className="flex items-center justify-center h-full">
               {previewContent}
             </div>
           </div>
         ) : (
-          <div className="code">
+          <div className="h-[500px] rounded-lg  bg-white/10">
             <pre>{codeContent}</pre>
           </div>
         )}

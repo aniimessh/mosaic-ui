@@ -8,10 +8,12 @@ const DocumentationLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <main className="flex w-full mx-auto h-[calc(100vh-100px)]">
+    <main className="flex w-full mx-auto h-[calc(100vh-64px)]">
       <Toaster richColors />
       <Sidebar />
-      <div className="px-2 lg:w-[calc(100vw-530px)] w-full">{children}</div>
+      <div className="px-2 lg:w-[calc(100vw-530px)] w-full overflow-scroll hideScrollbar ">
+        {children}
+      </div>
     </main>
   );
 };
