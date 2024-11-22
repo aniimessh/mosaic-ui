@@ -5,8 +5,8 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="h-16 sticky bg-black top-0 z-20  w-full mx-auto">
-      <div className="h-16 mx-auto sticky flex lg:container justify-between items-center p-2 px-4 lg:px-20">
+    <div className="h-16 sticky bg-black top-0 z-20  mx-auto">
+      <div className="h-16 mx-auto sticky flex lg:container justify-between items-center p-2 lg:px-16">
         <div className="flex items-center gap-4">
           <Link href={"/"}>
             <h1 className="font-black">Mosaic</h1>

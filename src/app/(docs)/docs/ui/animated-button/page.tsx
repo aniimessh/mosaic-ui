@@ -34,7 +34,7 @@ const AnimatedButtonPage = () => {
                 Copy and paste the following code into your project
               </p>
             </div>
-            <section className="ml-20">
+            <section className="ml-10">
               <DefaultCodeBlock />
             </section>
           </div>
