@@ -3,7 +3,7 @@ import BaseButton from "../ui/button/baseButton";
 
 type gradient = "neon" | "forest" | "choco" | "subtle" | "breathing" | "glitch";
 type radius = "full" | "2xl" | "3xl" | "md" | "lg" | "sm" | "none" | "xl";
-type animation = "breathing" | "shiny" | "bounce" | "glitch";
+// type animation = "breathing" | "shiny" | "bounce" | "glitch";
 
 const gradients: gradient[] = [
   "neon",

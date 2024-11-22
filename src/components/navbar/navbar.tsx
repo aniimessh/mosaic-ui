@@ -1,11 +1,9 @@
-import { Command, Github, Linkedin, Twitter } from "lucide-react";
-import Image from "next/image";
+import { Github, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 
 const Navbar = () => {
-  const router = useRouter();
   return (
     <div className="h-16 sticky bg-black top-0 z-20  w-full mx-auto">
       <div className="h-16 mx-auto sticky flex lg:container justify-between items-center p-2 px-4 lg:px-20">
