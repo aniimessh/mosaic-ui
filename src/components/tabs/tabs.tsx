@@ -17,13 +17,13 @@ const Tabs = ({ previewContent, codeContent }: TabsProps) => {
   return (
     <div className="">
       {/* Tab Buttons */}
-      <div className="flex gap-4 mb-5">
+      <div className="flex gap-1 mb-7">
         <button
           className={`${
             activeTab === "preview"
-              ? "bg-white/60 text-white"
-              : "bg-black text-white"
-          } px-4 rounded-lg border`}
+              ? "bg-white/10 text-white border-b-2 border-b-white"
+              : "bg-black text-white "
+          } px-4 p-2 rounded-sm border border-white/10   transition-all duration-200`}
           onClick={() => handleTabChange("preview")}
           type="button"
         >
@@ -32,9 +32,9 @@ const Tabs = ({ previewContent, codeContent }: TabsProps) => {
         <button
           className={`${
             activeTab === "code"
-              ? "bg-white/60 text-whhite"
-              : "bg-transparent text-white"
-          } px-4 rounded-lg border`}
+              ? "bg-white/10 text-white border-b-2 border-b-white"
+              : "bg-transparent text-white "
+          } px-4 p-2 rounded-sm border border-white/10    transition-all duration-200`}
           onClick={() => handleTabChange("code")}
           type="button"
         >
@@ -45,7 +45,11 @@ const Tabs = ({ previewContent, codeContent }: TabsProps) => {
       {/* Tab Content */}
       <div className="tab-content">
         {activeTab === "preview" ? (
-          <div className="preview">{previewContent}</div>
+          <div className="h-[400px] rounded-lg  bg-white/10">
+            <div className="flex items-center justify-center h-full">
+              {previewContent}
+            </div>
+          </div>
         ) : (
           <div className="code">
             <pre>{codeContent}</pre>

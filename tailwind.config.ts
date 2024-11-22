@@ -17,11 +17,26 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        neonbg: "#D2FF72",
       },
       keyframes: {
+        circular: {
+          "0%": { backgroundPosition: "100% 0" },
+          "25%": { backgroundPosition: "100% 100%" },
+          "50%": { backgroundPosition: "0 100%" },
+          "75%": { backgroundPosition: "0 0" },
+          "100%": { backgroundPosition: "100% 0" },
+        },
         shine: {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(100%)" },
+        },
+        shimmer: {
+          "0%": { backgroundPosition: "200% 0" },
+          "25%": { backgroundPosition: "200% 200%" },
+          "50%": { backgroundPosition: "0 200%" },
+          "75%": { backgroundPosition: "0 0" },
+          "100%": { backgroundPosition: "200% 0" },
         },
         streamer: {
           "0%": { backgroundPosition: "200% 0" },
@@ -37,7 +52,7 @@ export default {
             animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
           },
         },
-        shimmer: {
+        breathing: {
           "0%": { backgroundPosition: "200% 0%" },
           "100%": { backgroundPosition: "-200% 0%" },
         },
@@ -46,13 +61,23 @@ export default {
           "50%": { backgroundPosition: "100% 50%" },
           "100%": { backgroundPosition: "0% 50%" },
         },
+        glitch: {
+          "0%, 100%": { transform: "translateX(0)" },
+          "20%": { transform: "translateX(-3px)" },
+          "40%": { transform: "translateX(3px)" },
+          "60%": { transform: "translateX(-3px)" },
+          "80%": { transform: "translateX(3px)" },
+        },
       },
       animation: {
         shine: "shine 1.5s linear infinite",
         streamer: "streamer 3s linear infinite",
         gradientMove: "gradientMove 1s ease infinite",
         customBounce: "customBounce 1s infinite",
-        shimmer: "shimmer 5s linear infinite",
+        breathing: "breathing 5s linear infinite",
+        glitch: "glitch 1s infinite",
+        circular: "circular 4s linear infinite",
+        shimmer: "shimmer 3s ease-in-out infinite",
       },
     },
   },

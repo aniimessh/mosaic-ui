@@ -7,8 +7,8 @@ import React from "react";
 const Navbar = () => {
   const router = useRouter();
   return (
-    <div className="h-16 sticky top-0 ">
-      <div className="h-16 container mx-auto sticky flex justify-between items-center p-2 px-20">
+    <div className="h-16 sticky top-0 lg:container w-full mx-auto">
+      <div className="h-16 mx-auto sticky flex justify-between items-center p-2 px-20">
         <div className="flex items-center gap-4">
           <Link href={"/"}>
             <h1 className="font-black">Mosaic</h1>
