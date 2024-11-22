@@ -11,7 +11,7 @@ const DocumentationLayout = ({
     <main className="flex w-full mx-auto h-[calc(100vh-64px)]">
       <Toaster richColors />
       <Sidebar />
-      <div className="px-2 lg:w-[calc(100vw-530px)] w-full overflow-scroll hideScrollbar ">
+      <div className="px-2 lg:w-[calc(100vw-490px)] w-full overflow-scroll hideScrollbar ">
         {children}
       </div>
     </main>

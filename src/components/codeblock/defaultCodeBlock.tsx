@@ -24,10 +24,8 @@ const DefaultCodeBlock = () => {
 
       <pre className="whitespace-pre-wrap">
         <code className="language-javascript">
-          {`
-import React from "react";
-import BaseButton from "../ui/button/baseButton";
-
+          {`import React from "react";
+          
 type gradient = "neon" | "forest" | "choco" | "subtle" | "breathing" | "glitch";
 type radius = "full" | "2xl" | "3xl" | "md" | "lg" | "sm" | "none" | "xl";
 type animation = "breathing" | "shiny" | "bounce" | "glitch";
@@ -75,17 +73,37 @@ const AnimatedButton = () => {
 
 export default AnimatedButton;
 
+const BaseButton = ({
+  gradient,
+}: {
+  children: React.ReactNode;
+  gradient: string;
+  radius: string;
+}) => {
+  return gradient === "neon" ? (
+    <NeonButton />
+  ) : gradient === "breathing" ? (
+    <ShimmerButton />
+  ) : gradient === "forest" ? (
+    <ForestButton />
+  ) : gradient === "glitch" ? (
+    <GlitchButton />
+  ) : (
+    <></>
+  );
+};
+
       `}
         </code>
       </pre>
 
       {/* Expand Button */}
       <button
-        className="absolute inset-x-0 bottom-4 z-30 mx-auto w-[100px] bg-blue-500 text-white rounded-md p-2 text-center cursor-pointer hover:bg-blue-600"
+        className="absolute inset-x-0 bottom-4 z-30 mx-auto w-[100px] border text-white bg-black/80 rounded-md p-2 text-center cursor-pointer"
         onClick={() => setIsExpanded((prev) => !prev)}
         type="button"
       >
-        {isExpanded ? "Collapse" : "Expand"}
+        {isExpanded ? "Collapse" : "Read Code"}
       </button>
     </div>
   );

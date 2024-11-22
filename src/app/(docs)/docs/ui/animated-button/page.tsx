@@ -24,7 +24,8 @@ const AnimatedButtonPage = () => {
         <h1 className="text-3xl font-semibold mt-6 border-b border-b-white/20 pb-3">
           Manual Usage
         </h1>
-        <section className="my-5 h-[300px] flex flex-col  justify-between">
+        <section className="my-5 h-[300px] flex flex-col justify-between relative">
+          <div className="h-full w-0.5 bg-white/20 absolute left-4 -translate-x-1/2 clip-path-pointed" />
           <div>
             <div className="flex items-center gap-2">
               <p className="bg-neonbg p-4 rounded-full h-1 w-1 flex items-center justify-center text-black font-bold">
@@ -34,10 +35,10 @@ const AnimatedButtonPage = () => {
                 Copy and paste the following code into your project
               </p>
             </div>
-            <section className="ml-10">
-              <DefaultCodeBlock />
-            </section>
           </div>
+          <section className="ml-10">
+            <DefaultCodeBlock />
+          </section>
 
           <div className="flex items-center gap-2">
             <p className="bg-neonbg p-4 rounded-full h-1 w-1 flex items-center justify-center text-black font-bold">

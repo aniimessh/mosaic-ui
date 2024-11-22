@@ -1,7 +1,18 @@
+import Link from "next/link";
 import React from "react";
 
-const NotFound = () => {
-  return <div>NotFound</div>;
+const NotFoundPage = () => {
+  return (
+    <div className="flex flex-col items-center justify-center h-[calc(100vh-64px)] text-center">
+      <h1 className="text-4xl font-bold font-mono">404 - Page Not Found</h1>
+      <p className="mt-2 text-lg text-gray-600 font-mono">
+        Oops You Landed On Wrong Page
+      </p>
+      <Link href="/" className="hover:underline mt-10">
+        Go to homepage
+      </Link>
+    </div>
+  );
 };
 
-export default NotFound;
+export default NotFoundPage;
