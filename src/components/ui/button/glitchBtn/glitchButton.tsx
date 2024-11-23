@@ -38,7 +38,7 @@ const GlitchButton = () => {
   return (
     <button
       type="button"
-      className="relative px-10 py-2 bg-black border border-white/30 rounded-full font-semibold overflow-hidden group"
+      className="relative px-10 py-2 bg-black border border-white/30 font-semibold overflow-hidden group"
     >
       {randomDivs}
       <span className="absolute top-2 inset-0 text-blue-500 blur-[1px] animate-glitch font-extralight">

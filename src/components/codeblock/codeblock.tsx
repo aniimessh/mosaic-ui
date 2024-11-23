@@ -1,5 +1,6 @@
 "use client";
 
+import "highlight.js/styles/github-dark.css";
 import React, { useEffect, useState } from "react";
 import hljs from "highlight.js";
 import "highlight.js/styles/github-dark.css";
@@ -25,8 +26,12 @@ const CodeBlock = ({ code, title }: { code: string; title: string }) => {
   };
 
   return (
-    <div className="">
-      <div className="text-center text-sm my-2 text-gray-300">{title}</div>
+    <div className="bg-[#0D1117]">
+      <div className="text-center text-sm flex items-center  text-gray-300">
+        <div className="h-0.5 w-full bg-white/10 clip-path-pointed" />
+        {title}
+        <div className="h-0.5 w-full bg-white/10 clip-path-pointed" />
+      </div>
       <pre className="whitespace-pre-wrap relative">
         <div className="absolute top-2 z-10 right-2 p-2 bg-white/10 rounded-lg transition-all duration-500 ease-in-out text-white cursor-pointer">
           {isCopied ? (
