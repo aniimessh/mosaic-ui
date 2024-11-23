@@ -22,4 +22,5 @@ body {
 
 .hideScrollbar::-webkit-scrollbar {
   display: none;
+  /* animation: ; */
 }

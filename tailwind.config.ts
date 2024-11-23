@@ -71,6 +71,14 @@ export default {
           "60%": { transform: "translateX(-3px)" },
           "80%": { transform: "translateX(3px)" },
         },
+        slideIn: {
+          "0%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        slideOut: {
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(100%)" },
+        },
       },
       animation: {
         shine: "shine 1.5s linear infinite",
@@ -81,6 +89,8 @@ export default {
         glitch: "glitch 1s infinite",
         circular: "circular 4s linear infinite",
         shimmer: "shimmer 3s ease-in-out infinite",
+        slideIn: "slideIn 0.3s both",
+        slideOut: "slideOut 0.3s ease-in",
       },
     },
   },

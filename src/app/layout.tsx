@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import { Analytics } from "@vercel/analytics/react";
+import BottomBar from "@/components/bottomBar/bottomBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Navbar />
         {/* Render Sidebar only if not on homepage */}
         <main className="flex-1 ">{children}</main>
+        <BottomBar />
       </body>
     </html>
   );
