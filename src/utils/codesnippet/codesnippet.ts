@@ -125,54 +125,7 @@ export const codeSnippets = {
   };
   
   export default GlitchButton;
-  
         `,
-    },
-  ],
-  cards: [
-    {
-      id: "neon",
-      title: "Neon Card",
-      code: `import React from "react";
-const NeonCard = () => {
-  return (
-    <div className="flex items-center justify-center  w-80 rounded-xl shadow-cardNeon">
-      <div className="relative p-8 rounded-xl ">
-        <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#ff2975] via-[#00FFF1] to-[#ff2975] p-[2px]">
-          <div className="h-full w-full rounded-xl bg-black" />
-        </div>
-        <div className="relative z-10">
-          <p className="pointer-events-none whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-6xl font-bold leading-none tracking-tighter text-transparent drop-shadow-[0_0_10px_rgba(255,41,117,0.8)]">
-            Neon Gradient Card
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default NeonCard;
-      `,
-    },
-    {
-      id: "glass",
-      title: "Glassmorphism Card",
-      code: `import React from "react";
-
-const GlassCard = () => {
-  return (
-    <div className="h-full w-full  relative rounded-xl overflow-hidden bg-glass-bg bg-cover">
-      <div className="absolute inset-0 flex justify-center items-center p-6">
-        <div className="bg-black/10 backdrop-blur-sm border border-white/40 h-full flex justify-center items-center rounded-lg px-6  py-4 hover:shadow-2xl transition-all duration-300">
-          <p className="font-black text-center text-3xl">Glassmorphism Card</p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default GlassCard;
-      `,
     },
   ],
 };
