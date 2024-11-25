@@ -1,8 +1,8 @@
 import React from "react";
 import Breadcrumb from "@/components/breadcrumb/breadcrumb";
 import Tabs from "@/components/tabs/tabs";
-import AnimatedButton from "@/components/animatedButton/baseButton";
-import AnimatedButtonCode from "@/components/animatedButton/baseButtonCode";
+import AnimatedButton from "@/components/animatedButton/animdatedButton";
+import AnimatedButtonCode from "@/components/animatedButton/animatedButtonCode";
 import DefaultCodeBlock from "@/components/codeblock/defaultCodeBlock";
 
 const AnimatedButtonPage = () => {
@@ -55,3 +55,4 @@ const AnimatedButtonPage = () => {
 };
 
 export default AnimatedButtonPage;
+ 

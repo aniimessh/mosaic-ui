@@ -10,9 +10,13 @@ export default {
     extend: {
       backgroundImage: {
         "hero-pattern": "url('/imgs/background.png')",
+        "glass-bg":
+          "url('https://images.unsplash.com/photo-1492011221367-f47e3ccd77a0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
       },
       boxShadow: {
         neon: "0 0 10px rgba(0, 200, 255, 0.7), 0 0 20px rgba(0, 200, 255, 0.5), 0 0 30px rgba(0, 200, 255, 0.3)",
+        cardNeon:
+          "0 0 70px rgba(0, 200, 255, 0.7), 0 0 100px rgba(255,41,117,0.8), 0 0 200px rgba(0, 200, 255, 0.3)",
       },
       clipPath: {
         pointed: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",

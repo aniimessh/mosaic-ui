@@ -5,7 +5,7 @@ const BottomBar = () => {
   const [showSheet, setShowSheet] = useState<boolean>(false);
   return (
     <>
-      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 md:hidden">
+      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 lg:hidden">
         <button
           className="border px-10 py-1 border-white/40 rounded-full backdrop-blur-sm bg-transparent"
           type="button"

@@ -32,7 +32,6 @@ const AnimatedButton = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2  place-items-center gap-4">
           {gradients.map((gradient, i) => (
             <BaseButton
-              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
               key={i}
               gradient={gradient}
               radius={radiuss[i % radiuss.length]}
