@@ -1,6 +1,6 @@
 import React from "react";
-import NeonCard from "./neonCard/neonCard";
-import GlassCard from "./glassCard/glassCard";
+import { NeonCard } from "./neonCard/neonCard";
+import { GlassCard } from "./glassCard/glassCard";
 import { MinimalCard } from "./minimalCard/minimalCard";
 
 const MinimalBaseCard = ({ variant }: { variant: string; radius?: string }) => {
