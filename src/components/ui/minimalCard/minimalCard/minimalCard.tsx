@@ -10,9 +10,9 @@ export const MinimalCard = () => {
       <Image
         src={avengerBG}
         alt=""
-        width={400}
+        width={450}
         height={200}
-        className="h-[200px] object-cover rounded-2xl transition-all duration-200"
+        className="h-[200px] w-full object-cover rounded-2xl transition-all duration-200"
       />
 
       <div>
