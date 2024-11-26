@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import { Analytics } from "@vercel/analytics/react";
 import BottomBar from "@/components/bottomBar/bottomBar";
+import { Toaster } from "sonner";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,6 +34,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Toaster richColors />
         <Analytics />
         <Navbar />
         {/* Render Sidebar only if not on homepage */}
