@@ -8,7 +8,7 @@ import React from "react";
 const Home = () => {
   const router = useRouter();
   return (
-    <div className=" container mx-auto w-full flex lg:p-20 items-center justify-center h-[calc(100vh-64px)]">
+    <div className="relative container mx-auto w-full flex lg:p-20 items-center justify-center h-[calc(100vh-64px)]">
       <div className="lg:w-1/2 w-full flex flex-col items-center gap-10">
         <p className="relative flex items-center text-sm rounded-full cursor-default border border-transparent bg-gradient-to-l from-purple-500 via-pink-500 to-blue-500 bg-[length:200%_200%] animate-circular">
           <span className="relative bg-black px-4 py-1  rounded-full">

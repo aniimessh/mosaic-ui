@@ -7,4 +7,8 @@ export const CATEGORIES = [
     name: "UI",
     subcategories: ["Animated Button", "Minimal Card", "Action Modal"],
   },
+  {
+    name: "Text",
+    subcategories: ["Animated Text"],
+  },
 ];

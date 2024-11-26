@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: "'Roboto', sans-serif",
+      },
       backgroundImage: {
         "hero-pattern": "url('/imgs/background.png')",
         "glass-bg":
