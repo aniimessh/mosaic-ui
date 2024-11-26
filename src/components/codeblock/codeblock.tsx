@@ -5,10 +5,11 @@ import React, { useEffect, useState } from "react";
 import hljs from "highlight.js";
 import "highlight.js/styles/github-dark.css";
 import { Copy, Check } from "lucide-react";
-import { toast } from "sonner";
+import useToast from "@/hooks/use-toast";
 
 const CodeBlock = ({ code, title }: { code: string; title: string }) => {
   const [isCopied, setIsCopied] = useState(false);
+  const { showToast } = useToast();
 
   useEffect(() => {
     hljs.highlightAll();
@@ -18,10 +19,11 @@ const CodeBlock = ({ code, title }: { code: string; title: string }) => {
     try {
       await navigator.clipboard.writeText(code);
       setIsCopied(true);
-      toast.success("Copied to clipboard");
+      showToast("Copied to clipboard", "success");
       setTimeout(() => setIsCopied(false), 2000);
     } catch (err) {
-      console.error("Failed to copy: ", err);
+      console.log(err);
+      showToast("Failed to copy", "error");
     }
   };
 

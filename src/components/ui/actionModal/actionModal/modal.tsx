@@ -28,7 +28,7 @@ export const ActionModal = () => {
           <button
             type="button"
             className="flex items-center gap-2 bg-red-600 px-3 py-1 rounded-md text-white text-sm shadow-lg font-medium"
-            onClick={() => showToast("User deleted successfully")}
+            onClick={() => showToast("User deleted successfully", "success")}
           >
             Delete user <Trash2 size={14} />
           </button>
