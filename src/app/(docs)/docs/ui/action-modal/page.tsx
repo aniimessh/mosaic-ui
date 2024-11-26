@@ -2,6 +2,8 @@ import Breadcrumb from "@/components/breadcrumb/breadcrumb";
 import Tabs from "@/components/tabs/tabs";
 import { ActionModal } from "@/components/ui/actionModal/actionModal/modal";
 import ModalCode from "@/components/ui/actionModal/actionModal/modalCode";
+import FormModal from "@/components/ui/actionModal/formModal/formModal";
+import FormModalCode from "@/components/ui/actionModal/formModal/formModalCode";
 import React from "react";
 
 const ActionModalPage = () => {
@@ -15,6 +17,7 @@ const ActionModalPage = () => {
 
       <section className="mt-10 space-y-10">
         <Tabs codeContent={<ModalCode />} previewContent={<ActionModal />} />
+        <Tabs codeContent={<FormModalCode />} previewContent={<FormModal />} />
       </section>
     </div>
   );

@@ -6,43 +6,78 @@ import "highlight.js/styles/github-dark.css";
 import { Check, Copy } from "lucide-react";
 import { toast } from "sonner";
 
-const code = `"use client";
+const code = `
+"use client";
 
-import { Trash2, X } from "lucide-react";
+import useToast from "@/hooks/use-toast";
+import { Trash2, TriangleAlert, X } from "lucide-react";
 import React from "react";
-import { toast } from "sonner";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export const ActionModal = () => {
+  const { showToast } = useToast();
+
+  const trashRef = React.useRef(null);
+
+  useGSAP(() => {
+    return gsap.set(trashRef.current, {
+      y: 100,
+      opacity: 0,
+    });
+  });
+
+  const handleMouseEnter = () => {
+    gsap.to("#delete", {
+      y: 0, // Bring it to its original position
+      opacity: 1,
+      duration: 0.2,
+      ease: "power3.out",
+    });
+  };
+
+  const handleMouseLeave = () => {
+    gsap.to("#delete", {
+      y: 100, // Move it back out
+      opacity: 0,
+      duration: 0.2,
+      ease: "power4.in",
+    });
+  };
   return (
-    <div className="mx-auto lg:w-[400px]">
-      <div className="bg-white/80 rounded-lg">
-        <div className="flex items-center rounded-t-lg justify-between text-black  p-4">
+    <div className="">
+      <div className="bg-white/95 rounded-lg lg:w-[400px]">
+        <div className="flex items-center rounded-t-lg justify-between text-black p-4">
           <h1>Delete user</h1>
           <X size={14} className="cursor-pointer" />
         </div>
-        <div className="bg-white/90 p-4">
+        <div className="bg-white p-4">
           <p className="text-black">
             Are you sure you want to delete this <strong>user</strong>?
           </p>
         </div>
-        <div className="p-2 bg-red-200 bg-gradient-to-b from-white/80 to-red-300 rounded-b-lg">
-          <p className=" text-semibold text-red-500 rounded-b-lg  border-red-400 p-2">
-            This action can&apos;t be undone.
+        <div className="py-2 bg-gradient-to-b from-red-100 shadow-sm from to-transparent  rounded-b-lg">
+          <p className=" text-semibold text-red-500 rounded-b-lg  border-red-400 px-3 text-xs flex items-center gap-1">
+            <TriangleAlert size={12} /> This action is permanent and can&apos;t
+            be undone.
           </p>
         </div>
-        <div className="p-4  rounded-b-xl flex justify-end">
+        <div className="px-4 py-2.5  rounded-b-xl flex justify-end overflow-hidden">
           <button
             type="button"
             className="flex items-center gap-2 bg-red-600 px-3 py-1 rounded-md text-white text-sm shadow-lg font-medium"
-            onClick={() => toast.success("User deleted successfully")}
+            onClick={() => showToast("User deleted successfully", "success")}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
-            Delete user <Trash2 size={14} />
+            Delete user <Trash2 size={14} id="delete" ref={trashRef} />
           </button>
         </div>
       </div>
     </div>
   );
 };
+
 `;
 
 const ModalCode = () => {

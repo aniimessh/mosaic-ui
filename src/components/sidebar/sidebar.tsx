@@ -4,7 +4,7 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="w-[250px] relative h-full overflow-y-scroll hideScrollbar px-5 hidden lg:block">
+    <div className="w-[250px] z-20 relative h-full overflow-y-scroll hideScrollbar px-5 hidden lg:block">
       <div className="h-[100%] w-0.5 bg-white/20 absolute right-0 -translate-x-1/2 clip-path-pointed" />
       {CATEGORIES.map((category) => (
         <div key={category.name} className="relative pb-5">
