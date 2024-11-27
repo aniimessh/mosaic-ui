@@ -27,17 +27,6 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex items-center gap-3">
-          {/* <div className="relative">
-            <input
-              type="text"
-              placeholder="Search documentation..."
-              className="bg-white/10 p-1 px-3 pr-10 rounded-md w-[300px] outline-none focus:outline-none focus:ring-1 focus:ring-white/30 transition-all duration-200"
-            />
-            <div className="flex gap-1 items-center absolute top-1/2 -translate-y-1/2 right-2">
-              <Command size={14} />
-              <span className="text-white/40 text-[14px]">/</span>
-            </div>
-          </div> */}
           <Link href={"https://github.com/aniimessh"} target="_blank">
             <Github
               size={20}
