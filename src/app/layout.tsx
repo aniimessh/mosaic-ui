@@ -28,7 +28,7 @@ export default function RootLayout({
         <title>Mosaic UI</title>
         <link
           rel="shortcut icon"
-          href="/logo/favicon.ico"
+          href="/logo/favicon.png"
           type="image/x-icon"
           className="rounded-full"
         />

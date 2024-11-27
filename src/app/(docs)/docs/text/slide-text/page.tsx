@@ -1,7 +1,7 @@
 import Breadcrumb from "@/components/breadcrumb/breadcrumb";
 import DefaultCodeBlock from "@/components/codeblock/defaultCodeBlock";
 import Tabs from "@/components/tabs/tabs";
-import FadeText from "@/components/text/fadeText/fadeText";
+import SlideText from "@/components/text/slideText/slideText";
 import React from "react";
 
 const defaultCode = `"use client";
@@ -85,7 +85,7 @@ const FadeTextPage = () => {
         </p>
 
         <section className="mt-10 space-y-10">
-          <Tabs previewContent={<FadeText />} />
+          <Tabs previewContent={<SlideText />} />
         </section>
 
         <section>
