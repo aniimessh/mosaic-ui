@@ -3,7 +3,7 @@
 import { type ReactNode, useState } from "react";
 
 interface TabsProps {
-  codeContent: ReactNode;
+  codeContent?: ReactNode;
   previewContent: ReactNode;
 }
 
@@ -29,17 +29,19 @@ const Tabs = ({ previewContent, codeContent }: TabsProps) => {
         >
           Preview
         </button>
-        <button
-          className={`${
-            activeTab === "code"
-              ? "bg-white/10 text-white border-b-2 border-b-white/50"
-              : "bg-transparent text-white border-b-2 border-b-black"
-          } px-4 p-2 rounded-sm border border-white/10    transition-all duration-200`}
-          onClick={() => handleTabChange("code")}
-          type="button"
-        >
-          Code
-        </button>
+        {codeContent && (
+          <button
+            className={`${
+              activeTab === "code"
+                ? "bg-white/10 text-white border-b-2 border-b-white/50"
+                : "bg-transparent text-white border-b-2 border-b-black"
+            } px-4 p-2 rounded-sm border border-white/10    transition-all duration-200`}
+            onClick={() => handleTabChange("code")}
+            type="button"
+          >
+            Code
+          </button>
+        )}
       </div>
 
       {/* Tab Content */}

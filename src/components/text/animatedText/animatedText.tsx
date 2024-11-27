@@ -3,7 +3,7 @@
 import React, { useCallback, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-const AnimatedText = () => {
+export const AnimatedText = () => {
   const textRef = useRef<HTMLDivElement>(null);
 
   const createSpan = useCallback((text: string) => {
@@ -49,5 +49,3 @@ const AnimatedText = () => {
     </div>
   );
 };
-
-export default AnimatedText;

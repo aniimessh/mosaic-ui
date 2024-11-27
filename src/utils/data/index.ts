@@ -9,6 +9,6 @@ export const CATEGORIES = [
   },
   {
     name: "Text",
-    subcategories: ["Animated Text"],
+    subcategories: ["Animated Text", "Slide Text"],
   },
 ];
