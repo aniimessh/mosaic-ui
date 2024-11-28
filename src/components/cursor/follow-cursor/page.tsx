@@ -13,8 +13,8 @@ const FollowCursor: React.FC = () => {
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
       setCursorAxis({
-        x: event.x,
-        y: event.y,
+        x: event.clientX,
+        y: event.clientY,
       });
     };
 
@@ -40,7 +40,7 @@ const FollowCursor: React.FC = () => {
     <div>
       <div
         id="followcursor"
-        className="w-4 h-4 bg-red-400 absolute top-0 left-0 z-50 rounded-full pointer-events-none"
+        className="size-12 bg-transparent border-red-400 border absolute  top-0 left-0 z-50 rounded-full pointer-events-none  grid place-items-center"
       />
     </div>
   );

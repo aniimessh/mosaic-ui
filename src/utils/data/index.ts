@@ -9,7 +9,7 @@ export const CATEGORIES = [
   },
   {
     name: "Text",
-    subcategories: ["Animated Text", "Slide Text"],
+    subcategories: ["Animated Text", "Slide Text", "Scroll Trigger Text"],
   },
   {
     name: "Cursor",

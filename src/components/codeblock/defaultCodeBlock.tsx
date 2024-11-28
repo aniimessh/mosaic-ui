@@ -2,11 +2,11 @@
 
 import hljs from "highlight.js";
 import type React from "react";
-import { useEffect, useState } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 import "highlight.js/styles/github-dark.css";
 
 interface CodeBlockProps {
-  code: string;
+  code: string | ReactNode;
   language: string; // Example: "javascript", "python", etc.
 }
 

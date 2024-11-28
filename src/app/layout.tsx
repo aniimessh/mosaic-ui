@@ -33,7 +33,9 @@ export default function RootLayout({
           className="rounded-full"
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} overflow-hidden`}
+      >
         <Toaster richColors />
         <Analytics />
         <Navbar />

@@ -25,4 +25,5 @@ body {
 .hideScrollbar::-webkit-scrollbar {
   display: none;
   /* animation: ; */
+  /* transform: rotate(20); */
 }

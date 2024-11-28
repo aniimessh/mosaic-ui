@@ -47,7 +47,7 @@ const Tabs = ({ previewContent, codeContent }: TabsProps) => {
       {/* Tab Content */}
       <div className="tab-content">
         {activeTab === "preview" ? (
-          <div className="h-[500px] rounded-b-lg  bg-white/5 p-4">
+          <div className="h-[500px] overflow-y-scroll hideScrollbar rounded-b-lg  bg-white/5 p-4">
             <div className="flex items-center justify-center h-full">
               {previewContent}
             </div>
