@@ -12,7 +12,7 @@ const DocumentationLayout = ({
       <Toaster richColors />
       <Sidebar />
       <div className="px-2  w-full overflow-scroll hideScrollbar ">
-        <div className="lg:w-[calc(100vw-490px)]">{children}</div>
+        <div className="lg:w-[calc(100vw-490px)] ">{children}</div>
       </div>
     </main>
   );

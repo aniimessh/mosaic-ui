@@ -11,4 +11,8 @@ export const CATEGORIES = [
     name: "Text",
     subcategories: ["Animated Text", "Slide Text"],
   },
+  {
+    name: "Cursor",
+    subcategories: ["Follow Cursor"],
+  },
 ];
