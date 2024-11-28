@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
-    "lenis": "^1.1.17",
+    "@studio-freight/lenis": "^1.1.17",
     "@vercel/analytics": "^1.4.1",
     "clsx": "^2.1.1",
     "gsap": "^3.12.5",
