@@ -1,6 +1,6 @@
-import Breadcrumb from "@/components/breadcrumb/breadcrumb";
+import Breadcrumb from "@/components/common/breadcrumb/breadcrumb";
 import FollowCursor from "@/components/cursor/follow-cursor/page";
-import Tabs from "@/components/tabs/tabs";
+import Tabs from "@/components/helpers/tabs/tabs";
 import React from "react";
 
 const FollowCursorPage = () => {

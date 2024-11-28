@@ -1,8 +1,8 @@
 import { AnimatedText } from "@/components/text/animatedText/animatedText";
-import Breadcrumb from "@/components/breadcrumb/breadcrumb";
-import Tabs from "@/components/tabs/tabs";
+import Breadcrumb from "@/components/common/breadcrumb/breadcrumb";
+import Tabs from "@/components/helpers/tabs/tabs";
 import React from "react";
-import DefaultCodeBlock from "@/components/codeblock/defaultCodeBlock";
+import DefaultCodeBlock from "@/components/common/codeblock/defaultCodeBlock";
 
 const defaultCode = `
 "use client";

@@ -1,6 +1,6 @@
-import Breadcrumb from "@/components/breadcrumb/breadcrumb";
-import DefaultCodeBlock from "@/components/codeblock/defaultCodeBlock";
-import Tabs from "@/components/tabs/tabs";
+import Breadcrumb from "@/components/common/breadcrumb/breadcrumb";
+import DefaultCodeBlock from "@/components/common/codeblock/defaultCodeBlock";
+import Tabs from "@/components/helpers/tabs/tabs";
 import SlideText from "@/components/text/slideText/slideText";
 import React from "react";
 

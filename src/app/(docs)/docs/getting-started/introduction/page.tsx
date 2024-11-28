@@ -1,4 +1,4 @@
-import Breadcrumb from "@/components/breadcrumb/breadcrumb";
+import Breadcrumb from "@/components/common/breadcrumb/breadcrumb";
 import React from "react";
 
 const DocPage = () => {

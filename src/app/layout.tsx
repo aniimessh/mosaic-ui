@@ -2,10 +2,10 @@
 
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/navbar/navbar";
+import Navbar from "@/components/common/navbar/navbar";
 import { Analytics } from "@vercel/analytics/react";
-import BottomBar from "@/components/bottomBar/bottomBar";
 import { Toaster } from "sonner";
+import BottomBar from "@/components/common/bottomBar/bottomBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,8 +34,9 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} overflow-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} hideScrollbar`}
       >
+        <div className="absolute inset-0 h-full w-full -z-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
         <Toaster richColors />
         <Analytics />
         <Navbar />

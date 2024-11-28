@@ -1,8 +1,8 @@
-import Breadcrumb from "@/components/breadcrumb/breadcrumb";
-import Tabs from "@/components/tabs/tabs";
+import Breadcrumb from "@/components/common/breadcrumb/breadcrumb";
+import Tabs from "@/components/helpers/tabs/tabs";
 import ScrollTriggerText from "@/components/text/scrolTriggerText/scrollTriggerText";
 import React from "react";
-import DefaultCodeBlock from "@/components/codeblock/defaultCodeBlock";
+import DefaultCodeBlock from "@/components/common/codeblock/defaultCodeBlock";
 import ScrollTriggerTextCode from "@/components/text/scrolTriggerText/scrollTriggerTextCode";
 
 const ScrollTriggerTextPage = () => {

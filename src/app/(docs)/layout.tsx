@@ -1,4 +1,4 @@
-import Sidebar from "@/components/sidebar/sidebar";
+import Sidebar from "@/components/common/sidebar/sidebar";
 import type React from "react";
 import { Toaster } from "sonner";
 
@@ -8,10 +8,10 @@ const DocumentationLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <main className="flex w-full mx-auto h-[calc(100vh-64px)]">
+    <main className="flex w-full mx-auto h-[calc(100vh-64px)] bg-black">
       <Toaster richColors />
       <Sidebar />
-      <div className="px-2  w-full overflow-scroll hideScrollbar ">
+      <div className="px-2  w-full overflow-scroll hideScrollbar">
         <div className="lg:w-[calc(100vw-490px)] ">{children}</div>
       </div>
     </main>

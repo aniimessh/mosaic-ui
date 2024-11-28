@@ -1,5 +1,5 @@
-import Breadcrumb from "@/components/breadcrumb/breadcrumb";
-import Tabs from "@/components/tabs/tabs";
+import Breadcrumb from "@/components/common/breadcrumb/breadcrumb";
+import Tabs from "@/components/helpers/tabs/tabs";
 import { ActionModal } from "@/components/ui/actionModal/actionModal/modal";
 import ModalCode from "@/components/ui/actionModal/actionModal/modalCode";
 import FormModal from "@/components/ui/actionModal/formModal/formModal";

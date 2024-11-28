@@ -1,6 +1,6 @@
 import React from "react";
-import Breadcrumb from "@/components/breadcrumb/breadcrumb";
-import Tabs from "@/components/tabs/tabs";
+import Breadcrumb from "@/components/common/breadcrumb/breadcrumb";
+import Tabs from "@/components/helpers/tabs/tabs";
 import MinimalCardCode from "@/components/ui/minimalCard/minimalCard/minimalCardCode";
 import { MinimalCard } from "@/components/ui/minimalCard/minimalCard/minimalCard";
 import { NeonCard } from "@/components/ui/minimalCard/neonCard/neonCard";

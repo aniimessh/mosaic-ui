@@ -1,9 +1,9 @@
 import React from "react";
-import Breadcrumb from "@/components/breadcrumb/breadcrumb";
-import Tabs from "@/components/tabs/tabs";
+import Breadcrumb from "@/components/common/breadcrumb/breadcrumb";
+import Tabs from "@/components/helpers/tabs/tabs";
 import AnimatedButton from "@/components/animatedButton/animdatedButton";
 import AnimatedButtonCode from "@/components/animatedButton/animatedButtonCode";
-import DefaultCodeBlock from "@/components/codeblock/defaultCodeBlock";
+import DefaultCodeBlock from "@/components/common/codeblock/defaultCodeBlock";
 
 const buttonCode = `
 import React from "react";
