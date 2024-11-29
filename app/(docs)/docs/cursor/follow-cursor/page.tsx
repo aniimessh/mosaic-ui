@@ -10,7 +10,8 @@ const FollowCursorPage = () => {
       <section>
         <h1 className="text-3xl font-semibold">Follow Cursor</h1>
         <p className="mt-1">
-          Text fading transitions for words to pop up, down, right, left
+          An interactive React component that dynamically tracks and highlights
+          cursor movement with smooth animations.
         </p>
       </section>
 
