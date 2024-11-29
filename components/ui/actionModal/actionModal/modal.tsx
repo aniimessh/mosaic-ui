@@ -1,6 +1,6 @@
 "use client";
 
-import useToast from "@/hooks/use-toast";
+import useToast from "../../../../hooks/use-toast";
 import { Trash2, TriangleAlert, X } from "lucide-react";
 import React from "react";
 import gsap from "gsap";

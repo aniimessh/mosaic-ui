@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import hljs from "highlight.js";
 import "highlight.js/styles/github-dark.css";
 import { Copy, Check } from "lucide-react";
-import useToast from "@/hooks/use-toast";
+import useToast from "../../../hooks/use-toast";
 
 const CodeBlock = ({ code, title }: { code: string; title: string }) => {
   const [isCopied, setIsCopied] = useState(false);

@@ -1,10 +1,10 @@
 "use client";
 
 import localFont from "next/font/local";
-import "./globals.css";
-import Navbar from "@/components/common/navbar/navbar";
+import "../styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "sonner";
+import Navbar from "@/components/common/navbar/navbar";
 import BottomBar from "@/components/common/bottomBar/bottomBar";
 
 const geistSans = localFont({

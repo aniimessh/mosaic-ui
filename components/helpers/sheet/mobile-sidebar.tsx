@@ -1,4 +1,4 @@
-import { CATEGORIES } from "@/utils/data";
+import { CATEGORIES } from "../../../utils/data";
 import Link from "next/link";
 import React from "react";
 

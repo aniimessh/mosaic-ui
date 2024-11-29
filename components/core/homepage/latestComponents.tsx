@@ -2,8 +2,8 @@ import React from "react";
 
 const LatestComponent = () => {
   return (
-    <div className="w-full flex items-center justify-center h-full bg-black/30">
-      <div className="border border-white/10 p-1  rounded-lg mx-auto">
+    <div className="w-full flex items-center justify-center h-full ">
+      <div className="border border-white/10 p-1 bg-black/30  rounded-lg mx-auto">
         <div className="border border-white/10 p-2  rounded-lg mx-auto">
           <div className="flex items-start justify-between ">
             {/* left content */}

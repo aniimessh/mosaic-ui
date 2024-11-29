@@ -1,6 +1,6 @@
 import React from "react";
 import CodeBlock from "../common/codeblock/codeblock";
-import { codeSnippets } from "@/utils/codesnippet/codesnippet";
+import { codeSnippets } from "../../codesnippet/codesnippet";
 
 const AnimatedButtonCode = () => {
   return (

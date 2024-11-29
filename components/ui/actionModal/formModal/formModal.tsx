@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import { Badge, BadgeCheck, X } from "lucide-react";
 import React, { useRef, useState } from "react";
 import gsap from "gsap";
-import useToast from "@/hooks/use-toast";
+import useToast from "../../../../hooks/use-toast";
 
 const FormModal = () => {
   const [password, setPassword] = useState("");
