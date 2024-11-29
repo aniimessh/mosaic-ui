@@ -49,7 +49,7 @@ const LatestComponent = () => {
               </div>
             </div>
             {/* Right Content */}
-            <div className="relative h-[100px] overflow-hidden" id="testDiv">
+            <div className="relative h-[200px] overflow-hidden" id="testDiv">
               <Test />
             </div>
           </div>

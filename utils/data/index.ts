@@ -1,11 +1,16 @@
 export const CATEGORIES = [
   {
     name: "Getting-Started",
-    subcategories: ["Introduction", "Installation"],
+    subcategories: ["Introduction"],
   },
   {
     name: "UI",
-    subcategories: ["Animated Button", "Minimal Card", "Action Modal"],
+    subcategories: [
+      "Animated Button",
+      "Minimal Card",
+      "Action Modal",
+      "Flip Card",
+    ],
   },
   {
     name: "Text",
