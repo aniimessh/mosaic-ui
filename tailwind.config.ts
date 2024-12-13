@@ -85,6 +85,10 @@ export default {
           "0%": { transform: "translateY(0)" },
           "100%": { transform: "translateY(100%)" },
         },
+        "bounce-rotate": {
+          "0%": { transform: "translateY(50px) scale(1)" },
+          "100%": { transform: "translateY(10px) scale(1.8) rotate(360deg)" },
+        },
       },
       animation: {
         shine: "shine 1.5s linear infinite",
@@ -97,8 +101,24 @@ export default {
         shimmer: "shimmer 3s ease-in-out infinite",
         slideIn: "slideIn 0.3s both",
         slideOut: "slideOut 0.3s ease-in",
+        "bounce-rotate": "bounce-rotate 0.9s infinite alternate",
       },
     },
   },
-  plugins: [require("tailwind-clip-path")],
+  plugins: [
+    require("tailwind-clip-path"),
+    ({
+      addUtilities,
+    }: {
+      addUtilities: (
+        utilities: Record<string, { animationDelay: string }>
+      ) => void;
+    }) => {
+      const animationDelayUtilities = {
+        ".animation-delay-300": { animationDelay: "0.3s" },
+        ".animation-delay-600": { animationDelay: "0.6s" },
+      };
+      addUtilities(animationDelayUtilities);
+    },
+  ],
 } satisfies Config;

@@ -20,4 +20,8 @@ export const CATEGORIES = [
     name: "Cursor",
     subcategories: ["Follow Cursor"],
   },
+  {
+    name: "Loaders",
+    subcategories: ["Bounce"],
+  },
 ];
